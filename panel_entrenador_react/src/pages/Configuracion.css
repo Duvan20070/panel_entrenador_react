@@ -231,11 +231,12 @@ body::before {
 
 /* ── TOP BAR ── */
 .topbar {
-  display:flex;align-items:center;justify-content:space-between;
-  padding:16px 24px;
-  border-bottom:1px solid var(--border);
-  background:var(--panel);
-  flex-shrink:0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 32px;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
 }
 
 .topbar-left{display:flex;align-items:center;gap:14px}
@@ -269,16 +270,22 @@ body::before {
 .btn-success:hover{background:rgba(38,222,129,0.2);border-color:var(--success)}
 
 /* ── CONTENT AREA ── */
-.content{display:flex;flex:1;overflow:hidden}
 
+.content {
+  display: flex;
+  flex-direction: row;   /* ← clave: nav izquierda + sección derecha */
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
 /* ── SETTINGS NAV ── */
-.settings-nav{
-  width:200px;min-width:200px;
-  border-right:1px solid var(--border);
-  padding:20px 12px;
-  overflow-y:auto;
-  background:rgba(19,22,41,0.5);
-  flex-shrink:0;
+.settings-nav {
+  width: 200px;
+  min-width: 200px;
+  flex-shrink: 0;
+  padding: 20px 12px;
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
 }
 
 .snav-label{font-family:var(--font-head);font-size:10px;letter-spacing:2px;color:var(--muted);padding:0 8px;margin-bottom:6px;text-transform:uppercase;margin-top:16px}
@@ -297,8 +304,12 @@ body::before {
 .snav-badge{margin-left:auto;font-size:10px;padding:2px 6px;border-radius:6px;background:rgba(124,92,252,0.2);color:var(--accent);font-family:var(--font-head)}
 
 /* ── SETTINGS PANELS ── */
-.settings-content{flex:1;overflow-y:auto;padding:24px}
-
+.settings-content {
+  flex: 1;
+  min-width: 0;          /* ← sin esto no se expande */
+  overflow-y: auto;
+  padding: 28px 40px;
+}
 .settings-section{display:none;animation:fadeUp .3s ease}
 .settings-section.active{display:block}
 @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
@@ -573,5 +584,11 @@ body::before {
 .photo-opt{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;cursor:pointer;border:2px solid transparent;transition:all .2s}
 .photo-opt:hover,.photo-opt.selected{border-color:var(--accent);transform:scale(1.1);box-shadow:0 0 10px var(--accent-glow)}
 
-.conf-main { flex:1; display:flex; flex-direction:column; height:100vh; overflow:hidden; position:relative; z-index:1; min-width:0; }
-
+.conf-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}

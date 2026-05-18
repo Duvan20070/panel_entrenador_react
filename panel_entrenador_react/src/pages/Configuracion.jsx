@@ -43,12 +43,12 @@ export default function Configuracion() {
   }
 
   const navItems = [
-    { id:'perfil', label:'Perfil', icon:'👤' },
-    { id:'seguridad', label:'Seguridad', icon:'🔐' },
-    { id:'tema', label:'Tema', icon:'🎨' },
-    { id:'notificaciones', label:'Notificaciones', icon:'🔔' },
-    { id:'equipo', label:'Equipo', icon:'👥' },
-    { id:'peligro', label:'Eliminar', icon:'⚠️' },
+    { id:'perfil', label:'Perfil' },
+    { id:'seguridad', label:'Seguridad' },
+    { id:'tema', label:'Tema' },
+    { id:'notificaciones', label:'Notificaciones' },
+    { id:'equipo', label:'Equipo' },
+    { id:'peligro', label:'Eliminar' },
   ];
 
   return (

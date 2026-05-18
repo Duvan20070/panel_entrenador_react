@@ -46,20 +46,23 @@ body {
 }
 
 /* ═══════════════════════════════════════
-  APP LAYOUT
+   APP LAYOUT
 ═══════════════════════════════════════ */
 .app {
   display: flex;
+  flex: 1;
+  min-width: 0;
   height: 100vh;
+  overflow: hidden;
 }
 
 /* ═══════════════════════════════════════
    SIDEBAR
 ═══════════════════════════════════════ */
 .sidebar {
-  width: var(--sw);
-  min-width: var(--sw);
-  background: var(--card);
+  width: var(--sidebar-w);
+  min-width: var(--sidebar-w);
+  background: var(--bg-sidebar);
   border-right: 1px solid var(--border);
   display: flex;
   flex-direction: column;
