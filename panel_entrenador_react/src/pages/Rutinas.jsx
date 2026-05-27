@@ -113,7 +113,7 @@ export default function Rutinas() {
 
       {/* Week Cal */}
       <article className="card" style={{marginBottom:'10px'}}>
-        <header className="card-title"><span className="card-title-icon">📅</span> Semana actual</header>
+        <header className="card-title"><span className="card-title-icon"></span> Semana actual</header>
         <div className="week-cal">
           {getWeekDots().map((d,i) => (
             <div key={i} className="day-col">

@@ -29,7 +29,7 @@ export default function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="sb-logo">
-        <img src="Vollei.jpeg" alt="VolleyAI" className="sb-logo-icon" style={{ width: '42px', height: '42px', borderRadius: '12px', objectFit: 'cover' }} />        <div>
+        <img src="Vollei.jpeg" alt="VolleyAI" className="sb-logo-icon" style={{ width: '42px', height: '42px', borderRadius: '12px', objectFit: 'cover' }} /><div>
           <div className="sb-logo-name">VolleyAI</div>
           <div className="sb-logo-role">Entrenador</div>
         </div>
